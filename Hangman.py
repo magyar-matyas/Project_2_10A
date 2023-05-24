@@ -88,3 +88,30 @@ def guess(szo: str, gomb, kirajzolaslista: list, szint, hiba, screen):
         kirajz_surface = kirajzolaslista[szint - 1].kirajz[hiba]
         kirajz_rect = kirajz_surface.get_rect(midtop=(200,200))
         screen.blit(kirajz_surface, kirajz_rect)
+        
+def akasztofa(screen,hatter_surface, hatter_rect, szo: str, spaceindex, gombok, kirajzolaslista, szint, hiba, win):
+    jo = 0
+    for g in gombok:
+        g.value = 1
+    guess_buttons = []
+    level_surf = my_font.render(f'Level {szint}', False, (0,0,0))
+    level_surf = pygame.transform.scale(level_surf, (180,70))
+    level_rect = level_surf.get_rect(midtop= (600, 0))
+    
+    while True:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                exit()
+                
+            elif event.type == pygame.MOUSEBUTTONDOWN:
+                for g in gombok:
+                    if g.rect.collidepoint(pygame.mouse.get_pos()) and g.value == 1:
+                        guess_buttons.append(g)
+                        if g.betu not in szo.upper():
+                            hiba += 1
+                            g.value = 0
+                            
+        screen.blit(hatter_surface, hatter_rect)
+        screen.blit(level_surf, level_rect)
+    
