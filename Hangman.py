@@ -119,4 +119,13 @@ def akasztofa(screen,hatter_surface, hatter_rect, szo: str, spaceindex, gombok, 
         gombok_kiiras(gombok, screen)
         for gues in guess_buttons:
             guess(szo, gues, kirajzolaslista, szint, hiba, screen)
+            
+        for g in guess_buttons:
+            if g.value == 2:
+                jo += 1
+        
+        ellenorzes = []
+        for b in  szo.replace(" ",""):
+            if b not in ellenorzes:
+                ellenorzes.append(b)
     
