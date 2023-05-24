@@ -29,3 +29,14 @@ corpses.append(Corpses(3))
 corpses.append(Corpses(4))
 corpses.append(Corpses(5))
 corpses.append(Corpses(6))
+
+
+#functions
+def spaceindex(szo):
+    spacek = []
+    i = 0
+    for b in szo:
+        if b == " ":
+            spacek.append(i)
+        i += 1
+    return spacek
