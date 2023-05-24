@@ -49,3 +49,22 @@ def vonalak(betűszám: int, spaceind: list, screen):
         vonal_rect = vonal_surf.get_rect(midleft = (600 + x * s , 150))
         if x not in spaceind:
             screen.blit(vonal_surf, vonal_rect)
+            
+def gombok_kiiras(oszt_betulist: list[Gombok], screen):
+    h = 300
+    w = 600
+    ar = 500 / (len(oszt_betulist) / 2)
+    for g in oszt_betulist:
+        g.rect = g.surf.get_rect(center = (w, h))
+        # pygame.draw.rect(screen, '#30e8ec', g.rect, 15)
+        if g.value == 1:
+            pygame.draw.rect(screen, 'Black', g.rect, 1)
+        elif g.value == 0:
+            pygame.draw.rect(screen, 'Red', g.rect, 2)
+        elif g.value == 2:
+            pygame.draw.rect(screen, 'Green', g.rect, 2)
+        screen.blit(g.surf, g.rect)
+        w += ar
+        if w > 1150:
+            h = 400
+            w = 600
