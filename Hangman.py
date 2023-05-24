@@ -5,7 +5,7 @@ from Szavak import Szavak
 from Gombok import Gombok 
 from Corpses import Corpses
 
-
+my_font = pygame.font.SysFont("Comic Sans MS", 30)
 
 
 # szavak beolvasás
@@ -68,3 +68,23 @@ def gombok_kiiras(oszt_betulist: list[Gombok], screen):
         if w > 1150:
             h = 400
             w = 600
+            
+hiba = -1
+       
+def guess(szo: str, gomb, kirajzolaslista: list, szint, hiba, screen):
+    if gomb.betu in szo.upper():
+        gomb.value = 2
+        for i in range(len(szo)):
+            if gomb.betu == szo[i].upper():
+                w = 500 / len(szo)
+                s = 600 / len(szo)
+                betu_surf = my_font.render(gomb.betu, False, (255,255,255))
+                for x in range(len(szo)):
+                    betu_rect = betu_surf.get_rect(midleft=(600 + x * s, 130))
+                    if i == x:
+                        screen.blit(betu_surf, betu_rect)
+    else:
+        gomb.value = 0
+        kirajz_surface = kirajzolaslista[szint - 1].kirajz[hiba]
+        kirajz_rect = kirajz_surface.get_rect(midtop=(200,200))
+        screen.blit(kirajz_surface, kirajz_rect)
