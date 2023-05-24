@@ -20,3 +20,12 @@ with open("abc.txt", 'r', encoding='utf-8') as file:
     for b in file.read().strip().split(';'):
         betuk.append(Gombok(b))
  
+ 
+  # emberek beolvasása
+corpses = []
+corpses.append(Corpses(1))
+corpses.append(Corpses(2))
+corpses.append(Corpses(3))
+corpses.append(Corpses(4))
+corpses.append(Corpses(5))
+corpses.append(Corpses(6))
