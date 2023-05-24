@@ -6,7 +6,7 @@ from Gombok import Gombok
 from Corpses import Corpses
 
 my_font = pygame.font.SysFont("Comic Sans MS", 30)
-
+clock = pygame.time.Clock()
 
 # szavak beolvasás
 szósorok = []
@@ -97,8 +97,13 @@ def akasztofa(screen,hatter_surface, hatter_rect, szo: str, spaceindex, gombok, 
     level_surf = my_font.render(f'Level {szint}', False, (0,0,0))
     level_surf = pygame.transform.scale(level_surf, (180,70))
     level_rect = level_surf.get_rect(midtop= (600, 0))
-    
+    #running
     while True:
+        if win == 0:
+            break
+        elif win == 2:
+            break
+        
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
@@ -129,3 +134,70 @@ def akasztofa(screen,hatter_surface, hatter_rect, szo: str, spaceindex, gombok, 
             if b not in ellenorzes:
                 ellenorzes.append(b)
     
+        if jo == len(ellenorzes):
+            next_surf = my_font.render('Next',False, (0,0,0) )
+            next_surf = pygame.transform.scale(next_surf, (180,70))
+            next_rect = next_surf.get_rect(midright= (900, 400))
+            homme_surf = my_font.render('Menu',False, (0,0,0) )
+            homme_surf = pygame.transform.scale(homme_surf, (180,70))
+            homme_rect = homme_surf.get_rect(midleft= (300, 400))
+            win_surface = pygame.Surface((1200,600))
+            win_surface.fill((220,220,220))
+            win_rect = win_surface.get_rect(midtop=(600,0))
+            comp_surf = my_font.render('Completed',False, (0,0,0) )
+            comp_surf = pygame.transform.scale(comp_surf, (300,100))
+            comp_rect = comp_surf.get_rect(midbottom= (600, 300))
+            screen.blit(win_surface, win_rect)
+            screen.blit(homme_surf, homme_rect)
+            screen.blit(next_surf, next_rect)
+            screen.blit(comp_surf, comp_rect)
+            level_surf = pygame.transform.scale(level_surf, (300,100))
+            level_rect = level_surf.get_rect(midtop= (600, 0))
+            screen.blit(level_surf, level_rect)
+            pygame.draw.rect(screen, 'Black', next_rect, 2)
+            pygame.draw.rect(screen, 'Black', homme_rect, 2)
+            for event in pygame.event.get():
+                   
+                if event.type == pygame.MOUSEBUTTONDOWN:
+                    if homme_rect.collidepoint(pygame.mouse.get_pos()):
+                            win = 0
+                            with open('score.txt', 'w', encoding='utf-8' ) as sc:
+                                sc.write(f'{win}')
+                
+                    elif next_rect.collidepoint(pygame.mouse.get_pos()):
+                            win = 2
+                            with open('score.txt', 'w', encoding='utf-8' ) as sc:
+                                sc.write(f'{win}')
+                
+            
+            
+        jo = 0
+        
+        if hiba == 9:
+            homme_surf = my_font.render('Menu',False, (0,0,0) )
+            homme_surf = pygame.transform.scale(homme_surf, (180,70))
+            homme_rect = homme_surf.get_rect(midtop= (600, 400))
+            win_surface = pygame.Surface((1200,600))
+            win_surface.fill((220,220,220))
+            win_rect = win_surface.get_rect(midtop=(600,0))
+            comp_surf = my_font.render('Failed',False, (180,0,0) )
+            comp_surf = pygame.transform.scale(comp_surf, (300,100))
+            comp_rect = comp_surf.get_rect(midbottom= (600, 300))
+            screen.blit(win_surface, win_rect)
+            screen.blit(homme_surf, homme_rect)
+            screen.blit(comp_surf, comp_rect)
+            level_surf = pygame.transform.scale(level_surf, (300,100))
+            level_rect = level_surf.get_rect(midtop= (600, 0))
+            screen.blit(level_surf, level_rect)
+            pygame.draw.rect(screen, 'Black', homme_rect, 2)
+            for event in pygame.event.get():
+
+                if event.type == pygame.MOUSEBUTTONDOWN:
+                    if homme_rect.collidepoint(pygame.mouse.get_pos()):
+                            win = 0
+                            with open('score.txt', 'w', encoding='utf-8' ) as sc:
+                                sc.write(f'{win}')
+                
+            
+        pygame.display.update()
+        clock.tick(60)
