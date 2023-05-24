@@ -40,3 +40,12 @@ def spaceindex(szo):
             spacek.append(i)
         i += 1
     return spacek
+
+def vonalak(betűszám: int, spaceind: list, screen):
+    w = 500 / betűszám
+    s = 600 / betűszám
+    vonal_surf = pygame.Surface((w, 3))
+    for x in range(betűszám):
+        vonal_rect = vonal_surf.get_rect(midleft = (600 + x * s , 150))
+        if x not in spaceind:
+            screen.blit(vonal_surf, vonal_rect)
