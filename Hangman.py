@@ -85,9 +85,10 @@ def guess(szo: str, gomb, kirajzolaslista: list, szint, hiba, screen):
                         screen.blit(betu_surf, betu_rect)
     else:
         gomb.value = 0
-        kirajz_surface = kirajzolaslista[szint - 1].kirajz[hiba]
-        kirajz_rect = kirajz_surface.get_rect(midtop=(200,200))
-        screen.blit(kirajz_surface, kirajz_rect)
+        if hiba < 9:
+            kirajz_surface = kirajzolaslista[szint - 1].kirajz[hiba]
+            kirajz_rect = kirajz_surface.get_rect(midtop=(200,200))
+            screen.blit(kirajz_surface, kirajz_rect)
         
 def akasztofa(screen,hatter_surface, hatter_rect, szo: str, spaceindex, gombok, kirajzolaslista, szint, hiba, win):
     jo = 0

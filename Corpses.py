@@ -1,9 +1,10 @@
 import pygame
 
 class Corpses:
-    kirajz = []
+   
     
     def __init__(self, szint) -> None:
+        self.kirajz = []
         self.kirajz.append(pygame.image.load(f'akasztottak/lvl{szint}/h0.png'))
         self.kirajz.append(pygame.image.load(f'akasztottak/lvl{szint}/h1.png'))
         self.kirajz.append(pygame.image.load(f'akasztottak/lvl{szint}/h2.png'))
