@@ -52,6 +52,10 @@ def main() -> None:
     play_surf = my_font.render('Play',False, (255,255,255) )
     play_surf = pygame.transform.scale(play_surf, (180,70))
     play_rect = play_surf.get_rect(midleft= (150, 300))
+    
+    exit_surf = my_font.render('Exit',False, (0,0,0) )
+    exit_surf = pygame.transform.scale(exit_surf, (100,50))
+    exit_rect = exit_surf.get_rect(midleft= (150, 500))
 
     custom_surf = my_font.render('Custom',False, (255,255,255) )
     custom_surf = pygame.transform.scale(custom_surf, (180,70))
@@ -88,13 +92,17 @@ def main() -> None:
                                 akasztofa(screen, hatter_surface, hatter_rect, szo4, spaceindex(szo4),betuk, corpses, 4, hiba, win)
                     elif custom_rect.collidepoint(pygame.mouse.get_pos()):
                         pass
+                    elif exit_rect.collidepoint(pygame.mouse.get_pos()):
+                        pygame.quit()
+                        exit() 
                     
         screen.blit(fokepernyo_surf, fokepernyo_rect)
         screen.blit(play_surf, play_rect)
         pygame.draw.rect(screen, 'White', play_rect, 2)
         screen.blit(custom_surf, custom_rect)
         pygame.draw.rect(screen, 'White', custom_rect, 2)
-        
+        screen.blit(exit_surf, exit_rect)
+        pygame.draw.rect(screen, 'Black', custom_rect, 2)
         
         
         pygame.display.update()
