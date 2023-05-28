@@ -1,0 +1,2 @@
+Minta: max 30betű / mondatjel, speciális karakter tilos / szo1;szo2;szo3 -random sorsol  / szo1
+asd
