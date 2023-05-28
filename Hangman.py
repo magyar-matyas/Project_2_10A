@@ -21,7 +21,7 @@ with open("abc.txt", 'r', encoding='utf-8') as file:
         betuk.append(Gombok(b))
  
  
-  # emberek beolvasása
+ # emberek beolvasása
 corpses = []
 corpses.append(Corpses(1))
 corpses.append(Corpses(2))
@@ -29,8 +29,7 @@ corpses.append(Corpses(3))
 corpses.append(Corpses(4))
 corpses.append(Corpses(5))
 corpses.append(Corpses(6))
-
-
+       
 #functions
 def spaceindex(szo):
     spacek = []
@@ -40,7 +39,7 @@ def spaceindex(szo):
             spacek.append(i)
         i += 1
     return spacek
-
+            
 def vonalak(betűszám: int, spaceind: list, screen):
     w = 500 / betűszám
     s = 600 / betűszám
@@ -68,9 +67,10 @@ def gombok_kiiras(oszt_betulist: list[Gombok], screen):
         if w > 1150:
             h = 400
             w = 600
+
             
 hiba = -1
-       
+
 def guess(szo: str, gomb, kirajzolaslista: list, szint, hiba, screen):
     if gomb.betu in szo.upper():
         gomb.value = 2
@@ -89,16 +89,27 @@ def guess(szo: str, gomb, kirajzolaslista: list, szint, hiba, screen):
             kirajz_surface = kirajzolaslista[szint - 1].kirajz[hiba]
             kirajz_rect = kirajz_surface.get_rect(midtop=(200,200))
             screen.blit(kirajz_surface, kirajz_rect)
-        
+    
+def hs_mentes(szint):
+    with open('highscore.txt', 'r', encoding='utf-8') as f:
+        sz = f.read().strip()
+        sz = int(sz)
+        if szint > sz:
+            with open('highscore.txt', 'w', encoding='utf-8') as f:
+                f.write(f'{szint}')
+   
 def akasztofa(screen,hatter_surface, hatter_rect, szo: str, spaceindex, gombok, kirajzolaslista, szint, hiba, win):
+    # screen = pygame.display.set_mode((1200, 600))
+    # pygame.display.set_caption('Hangman')
     jo = 0
+
     for g in gombok:
         g.value = 1
     guess_buttons = []
     level_surf = my_font.render(f'Level {szint}', False, (0,0,0))
     level_surf = pygame.transform.scale(level_surf, (180,70))
     level_rect = level_surf.get_rect(midtop= (600, 0))
-    #running
+    # running
     while True:
         keretesc = 2
         keretnxt = 2
@@ -111,6 +122,7 @@ def akasztofa(screen,hatter_surface, hatter_rect, szo: str, spaceindex, gombok, 
             if g.rect.collidepoint(pygame.mouse.get_pos()) and g.value == 1:
                 g.keret = 2
         
+            
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
@@ -123,7 +135,8 @@ def akasztofa(screen,hatter_surface, hatter_rect, szo: str, spaceindex, gombok, 
                         if g.betu not in szo.upper():
                             hiba += 1
                             g.value = 0
-                            
+                
+
         screen.blit(hatter_surface, hatter_rect)
         screen.blit(level_surf, level_rect)
         
@@ -140,8 +153,9 @@ def akasztofa(screen,hatter_surface, hatter_rect, szo: str, spaceindex, gombok, 
         for b in  szo.replace(" ",""):
             if b not in ellenorzes:
                 ellenorzes.append(b)
-    
+            
         if jo == len(ellenorzes):
+            hs_mentes(szint)
             next_surf = my_font.render('Next',False, (0,0,0) )
             next_surf = pygame.transform.scale(next_surf, (180,70))
             next_rect = next_surf.get_rect(midright= (900, 400))
