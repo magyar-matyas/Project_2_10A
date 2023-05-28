@@ -18,7 +18,11 @@ def main() -> None:
     with open('szavak.txt', 'r', encoding='utf-8') as file:
         for sor in file.read().splitlines():
             szósorok.append(Szavak(sor))
-
+    custszosorok = []
+    with open('custom.txt', 'r', encoding='utf-8') as file:
+        for sor in file.read().splitlines():
+            custszosorok.append(Szavak(sor))
+        
     def gomb_beolv():       
         betuk = []
         with open("abc.txt", 'r', encoding='utf-8') as file:
@@ -93,7 +97,8 @@ def main() -> None:
                                 gomb_beolv()
                                 akasztofa(screen, hatter_surface, hatter_rect, szo4, spaceindex(szo4),betuk, corpses, 4, hiba, win)
                     elif custom_rect.collidepoint(pygame.mouse.get_pos()):
-                        pass
+                        custszo = custszosorok[1].random_szo
+                        akasztofa(screen, hatter_surface, hatter_rect, custszo, spaceindex(custszo),betuk, corpses, 1, hiba, win)
                     elif exit_rect.collidepoint(pygame.mouse.get_pos()):
                         pygame.quit()
                         exit() 
