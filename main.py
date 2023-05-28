@@ -22,7 +22,7 @@ def main() -> None:
     with open('custom.txt', 'r', encoding='utf-8') as file:
         for sor in file.read().splitlines():
             custszosorok.append(Szavak(sor))
-        
+
     def gomb_beolv():       
         betuk = []
         with open("abc.txt", 'r', encoding='utf-8') as file:
@@ -38,6 +38,11 @@ def main() -> None:
     corpses.append(Corpses(4))
     corpses.append(Corpses(5))
     corpses.append(Corpses(6))
+
+    #highscore beolvasás:
+    with open('highscore.txt', 'r', encoding='utf-8') as file:
+        var = file.read().strip()
+        hsc = int(var)
             
     #pygame
     screen = pygame.display.set_mode((1200, 600))
@@ -49,27 +54,33 @@ def main() -> None:
     hatter_surface.fill((200, 200, 200))
     hatter_rect = hatter_surface.get_rect(midtop = (600, 0))
 
-    fokepernyo_surf = pygame.Surface((1200,600))
+    fokepernyo_surf = pygame.image.load('képek/pixil-frame-1.png')
     # fokepernyo_surf.fill((255,255,255))
     fokepernyo_rect = fokepernyo_surf.get_rect(topleft =(0,0))
 
-    play_surf = my_font.render('Play',False, (255,255,255) )
+    play_surf = my_font.render('Play',False, (0,0,0) )
     play_surf = pygame.transform.scale(play_surf, (180,70))
     play_rect = play_surf.get_rect(midleft= (150, 300))
-    
+
     exit_surf = my_font.render('Exit',False, (0,0,0) )
     exit_surf = pygame.transform.scale(exit_surf, (100,50))
     exit_rect = exit_surf.get_rect(midleft= (150, 500))
 
-    custom_surf = my_font.render('Custom',False, (255,255,255) )
+    custom_surf = my_font.render('Custom',False, (0,0,0) )
     custom_surf = pygame.transform.scale(custom_surf, (180,70))
     custom_rect = custom_surf.get_rect(midleft= (150, 400))
+
+    hscore_surf = my_font.render('Highscore',False, (0,0,0) )
+    hscore_surf = pygame.transform.scale(hscore_surf, (170,70))
+    hscore_rect = hscore_surf.get_rect(midleft= (855, 280))
+
 
     win = 1 #ha 0 akkor nincs next
     hiba = -1
     keretc = 2
     keretp = 2
     keretex = 2
+        
     while True:
         
         for event in pygame.event.get():
@@ -101,25 +112,34 @@ def main() -> None:
                         akasztofa(screen, hatter_surface, hatter_rect, custszo, spaceindex(custszo),betuk, corpses, 1, hiba, win)
                     elif exit_rect.collidepoint(pygame.mouse.get_pos()):
                         pygame.quit()
-                        exit() 
+                        exit()  
         if custom_rect.collidepoint(pygame.mouse.get_pos()):
             keretc = 4
         elif play_rect.collidepoint(pygame.mouse.get_pos()):
             keretp = 4
         elif exit_rect.collidepoint(pygame.mouse.get_pos()):
             keretex = 4
-                    
+        
+        with open('highscore.txt', 'r', encoding='utf-8') as file:
+            var = file.read().strip()
+            hsc = int(var)  
+            hscoren_surf = my_font.render(f'{hsc}',False, (0,0,0) )
+            hscoren_surf = pygame.transform.scale(hscoren_surf, (100,100))
+            hscoren_rect = hscoren_surf.get_rect(midtop= (935, 320))    
         screen.blit(fokepernyo_surf, fokepernyo_rect)
         screen.blit(play_surf, play_rect)
-        pygame.draw.rect(screen, 'White', play_rect, keretp)
+        pygame.draw.rect(screen, 'Black', play_rect, keretp)
         screen.blit(custom_surf, custom_rect)
-        pygame.draw.rect(screen, 'White', custom_rect, keretc)
+        pygame.draw.rect(screen, 'Black', custom_rect, keretc)
         screen.blit(exit_surf, exit_rect)
         pygame.draw.rect(screen, 'Black', exit_rect, keretex)
+        screen.blit(hscore_surf, hscore_rect)
+        screen.blit(hscoren_surf, hscoren_rect)
         keretc = 2
         keretp = 2
         keretex = 2
-    
+        
+        
         
         pygame.display.update()
         clock.tick(60)
