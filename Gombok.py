@@ -11,3 +11,4 @@ class Gombok:
         self.surf = my_font.render(betu, False, (255, 255, 255))
         self.value = 1
         self.rect = self.surf.get_rect(midleft = (0,0))
+        self.keret = 1

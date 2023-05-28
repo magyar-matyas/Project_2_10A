@@ -63,7 +63,9 @@ def main() -> None:
 
     win = 1 #ha 0 akkor nincs next
     hiba = -1
-
+    keretc = 2
+    keretp = 2
+    keretex = 2
     while True:
         
         for event in pygame.event.get():
@@ -95,15 +97,24 @@ def main() -> None:
                     elif exit_rect.collidepoint(pygame.mouse.get_pos()):
                         pygame.quit()
                         exit() 
+        if custom_rect.collidepoint(pygame.mouse.get_pos()):
+            keretc = 4
+        elif play_rect.collidepoint(pygame.mouse.get_pos()):
+            keretp = 4
+        elif exit_rect.collidepoint(pygame.mouse.get_pos()):
+            keretex = 4
                     
         screen.blit(fokepernyo_surf, fokepernyo_rect)
         screen.blit(play_surf, play_rect)
-        pygame.draw.rect(screen, 'White', play_rect, 2)
+        pygame.draw.rect(screen, 'White', play_rect, keretp)
         screen.blit(custom_surf, custom_rect)
-        pygame.draw.rect(screen, 'White', custom_rect, 2)
+        pygame.draw.rect(screen, 'White', custom_rect, keretc)
         screen.blit(exit_surf, exit_rect)
-        pygame.draw.rect(screen, 'Black', custom_rect, 2)
-        
+        pygame.draw.rect(screen, 'Black', exit_rect, keretex)
+        keretc = 2
+        keretp = 2
+        keretex = 2
+    
         
         pygame.display.update()
         clock.tick(60)

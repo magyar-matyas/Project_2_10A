@@ -58,7 +58,7 @@ def gombok_kiiras(oszt_betulist: list[Gombok], screen):
         g.rect = g.surf.get_rect(center = (w, h))
         # pygame.draw.rect(screen, '#30e8ec', g.rect, 15)
         if g.value == 1:
-            pygame.draw.rect(screen, 'Black', g.rect, 1)
+            pygame.draw.rect(screen, 'Black', g.rect, g.keret)
         elif g.value == 0:
             pygame.draw.rect(screen, 'Red', g.rect, 2)
         elif g.value == 2:
@@ -99,10 +99,16 @@ def akasztofa(screen,hatter_surface, hatter_rect, szo: str, spaceindex, gombok, 
     level_rect = level_surf.get_rect(midtop= (600, 0))
     #running
     while True:
+        keretesc = 2
+        keretnxt = 2
         if win == 0:
             break
         elif win == 2:
             break
+        for g in gombok:
+            g.keret = 1
+            if g.rect.collidepoint(pygame.mouse.get_pos()) and g.value == 1:
+                g.keret = 2
         
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -154,8 +160,12 @@ def akasztofa(screen,hatter_surface, hatter_rect, szo: str, spaceindex, gombok, 
             level_surf = pygame.transform.scale(level_surf, (300,100))
             level_rect = level_surf.get_rect(midtop= (600, 0))
             screen.blit(level_surf, level_rect)
-            pygame.draw.rect(screen, 'Black', next_rect, 2)
-            pygame.draw.rect(screen, 'Black', homme_rect, 2)
+            if homme_rect.collidepoint(pygame.mouse.get_pos()):
+                keretesc = 4
+            elif next_rect.collidepoint(pygame.mouse.get_pos()):          
+                keretnxt = 4
+            pygame.draw.rect(screen, 'Black', next_rect, keretnxt)
+            pygame.draw.rect(screen, 'Black', homme_rect, keretesc)
             for event in pygame.event.get():
                    
                 if event.type == pygame.MOUSEBUTTONDOWN:
@@ -189,7 +199,9 @@ def akasztofa(screen,hatter_surface, hatter_rect, szo: str, spaceindex, gombok, 
             level_surf = pygame.transform.scale(level_surf, (300,100))
             level_rect = level_surf.get_rect(midtop= (600, 0))
             screen.blit(level_surf, level_rect)
-            pygame.draw.rect(screen, 'Black', homme_rect, 2)
+            if homme_rect.collidepoint(pygame.mouse.get_pos()):
+                keretesc = 4
+            pygame.draw.rect(screen, 'Black', homme_rect, keretesc)
             for event in pygame.event.get():
 
                 if event.type == pygame.MOUSEBUTTONDOWN:
