@@ -1,5 +1,5 @@
 alma;cica;polc;lány;fény;hold;ajtó;álom;baba;bank;bagó;baki;báró;vall;váll;zakó
-ablak;kutya;majom;kifli;labda
+ablak;kutya;majom;kifli;labda;malac;alkar;zuhog;zubog;zsuga;zuhan;agrár;tenger;sza,ár;kalap
 villamos;ananász;piskóta;kalauz
 kanálgép;oroszlán;nits laci
 analfabéta;programozás
