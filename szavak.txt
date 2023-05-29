@@ -1,7 +1,8 @@
 alma;cica;polc;lány;fény;hold;ajtó;álom;baba;bank;bagó;baki;báró;vall;váll;zakó
 ablak;kutya;majom;kifli;labda;malac;alkar;zuhog;zubog;zsuga;zuhan;agrár;tenger;sza,ár;kalap
 kalauz;kaktusz;abrosz;afrika;agancs;akárki;akármi;alájúz;alapos;aljzat;állami;altató
-villamos;ananász;piskóta
-ábrázolás;adószedés;ágaskosik;agyonsap;ágytakaró;ágyúgolyó;afyvérzés;akaraterő;akadályoz;aktuális;akusztika;alapanyag
+villamos;ananász;piskóta;ablaktok;akadozás;adalékos;adottság;adogatás;ágyartó;akadémia;alacsony;alánukik;alakítja;alámerül;alapszín;alapvető;albérlet;
+ábrázolás;adószedés;ágaskodik;agyonsap;ágytakaró;ágyúgolyó;agyvérzés;akaraterő;akadályoz;aktuális;akusztika;alapanyag
 analfabéta;programozás;adagológép;adományozó;adóhiavatal;adottságok;alapvetően;alapítvány;alapjaiban;alapelemek;algoritmus
 csak minta
+
