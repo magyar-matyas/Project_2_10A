@@ -2,6 +2,6 @@ alma;cica;polc;lány;fény;hold;ajtó;álom;baba;bank;bagó;baki;báró;vall;vá
 ablak;kutya;majom;kifli;labda;malac;alkar;zuhog;zubog;zsuga;zuhan;agrár;tenger;sza,ár;kalap
 kalauz;kaktusz;abrosz;afrika;agancs;akárki;akármi;alájúz;alapos;aljzat;állami;altató
 villamos;ananász;piskóta
-kanálgép;oroszlán;nits laci
+ábrázolás;adószedés;ágaskosik;agyonsap;ágytakaró;ágyúgolyó;afyvérzés;akaraterő;akadályoz;aktuális;akusztika;alapanyag
 analfabéta;programozás
 csak minta
