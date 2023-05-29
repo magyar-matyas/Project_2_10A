@@ -1,7 +1,8 @@
 alma;cica;polc;lány;fény;hold;ajtó;álom;baba;bank;bagó;baki;báró;vall;váll;zakó
 ablak;kutya;majom;kifli;labda;malac;alkar;zuhog;zubog;zsuga;zuhan;agrár;tenger;sza,ár;kalap
 kalauz;kaktusz;abrosz;afrika;agancs;akárki;akármi;alájúz;alapos;aljzat;állami;altató
-villamos;ananász;piskóta
+ananász;piskóta;ábrázol;adagoló;afrikai;ágazati;aggódik;agyagos;ajánlás;akadozó;akasztó;alagsor;alkohol
+villamos
 kanálgép;oroszlán;nits laci
 analfabéta;programozás
 csak minta
