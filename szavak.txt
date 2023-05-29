@@ -3,5 +3,5 @@ ablak;kutya;majom;kifli;labda;malac;alkar;zuhog;zubog;zsuga;zuhan;agrár;tenger;
 kalauz;kaktusz;abrosz;afrika;agancs;akárki;akármi;alájúz;alapos;aljzat;állami;altató
 villamos;ananász;piskóta
 ábrázolás;adószedés;ágaskosik;agyonsap;ágytakaró;ágyúgolyó;afyvérzés;akaraterő;akadályoz;aktuális;akusztika;alapanyag
-analfabéta;programozás
+analfabéta;programozás;adagológép;adományozó;adóhiavatal;adottságok;alapvetően;alapítvány;alapjaiban;alapelemek;algoritmus
 csak minta
