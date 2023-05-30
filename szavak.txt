@@ -3,5 +3,6 @@ ablak;kutya;majom;kifli;labda;malac;alkar;zuhog;zubog;zsuga;zuhan;agrár;tenger;
 kalauz;kaktusz;abrosz;afrika;agancs;akárki;akármi;alájúz;alapos;aljzat;állami;altató
 villamos;ananász;piskóta;ablaktok;akadozás;adalékos;adottság;adogatás;ágyartó;akadémia;alacsony;alánukik;alakítja;alámerül;alapszín;alapvető;albérlet;
 kanálgép;oroszlán;ábrázoló;adakozás;aggasztó;akasztós;alaposan;álcázott
-analfabéta;programozás
+analfabéta;ablaküveg;acéllemez;adományoz;adószedés;agresszív;ajándékoz;akadályok;akasztófa
+programozás
 csak minta
