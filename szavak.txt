@@ -6,4 +6,5 @@ kanálgép;oroszlán;ábrázoló;adakozás;aggasztó;akasztós;alaposan;álcázo
 analfabéta;ablaküveg;acéllemez;adományoz;adószedés;agresszív;ajándékoz;akadályok;akasztófa
 ábrázolás;adatfájlok;adottságok;alapelemek;alapítvány;alátámaszt;alkalmazás;állatorvos
 programozás;ablaknyílás;adatgyűjtés;adatelemzés;adományozás;ágymelegítő;akadályozás;alázatosság;alkotmányos
+acélkalapács;ágyúcsapszeg;alakváltozás;alattomosság;alaklmazható;alkotóelemek;állomásnapló;anyavállalat
 csak minta
