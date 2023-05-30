@@ -4,5 +4,6 @@ kalauz;kaktusz;abrosz;afrika;agancs;akárki;akármi;alájúz;alapos;aljzat;álla
 villamos;ananász;piskóta;ablaktok;akadozás;adalékos;adottság;adogatás;ágyartó;akadémia;alacsony;alánukik;alakítja;alámerül;alapszín;alapvető;albérlet;
 kanálgép;oroszlán;ábrázoló;adakozás;aggasztó;akasztós;alaposan;álcázott
 analfabéta;ablaküveg;acéllemez;adományoz;adószedés;agresszív;ajándékoz;akadályok;akasztófa
+ábrázolás;adatfájlok;adottságok;alapelemek;alapítvány;alátámaszt;alkalmazás;állatorvos
 programozás
 csak minta
