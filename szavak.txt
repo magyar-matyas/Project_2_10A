@@ -9,4 +9,5 @@ programozás;ablaknyílás;adatgyűjtés;adatelemzés;adományozás;ágymelegít
 acélkalapács;ágyúcsapszeg;alakváltozás;alattomosság;alaklmazható;alkotóelemek;állomásnapló;anyavállalat
 ablaktisztító;akadálymentes;alapozófesték;alkalmazkodás;álandosított;állványcsavar;alumíniumipar;ártalmatlanul
 adagolótölcsér;akadálytalanul;alkalmatlanság;alkotmányosság;állattenyészet;anyagvizsgálat
+adatfeldolgozás;alkalmazhatóság;állattenyésztés;anyakönyvvezető;átcsoportosítás
 csak minta
