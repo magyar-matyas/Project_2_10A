@@ -10,4 +10,5 @@ acélkalapács;ágyúcsapszeg;alakváltozás;alattomosság;alaklmazható;alkotó
 ablaktisztító;akadálymentes;alapozófesték;alkalmazkodás;álandosított;állványcsavar;alumíniumipar;ártalmatlanul
 adagolótölcsér;akadálytalanul;alkalmatlanság;alkotmányosság;állattenyészet;anyagvizsgálat
 adatfeldolgozás;alkalmazhatóság;állattenyésztés;anyakönyvvezető;átcsoportosítás
+alkotmányellenes;bankjegyhamisító;beszámíthatatlan;csatornatisztító;derékszögvonalzó;egészségtelenség;életszükségletek
 csak minta
