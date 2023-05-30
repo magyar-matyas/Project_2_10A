@@ -5,5 +5,5 @@ villamos;ananász;piskóta;ablaktok;akadozás;adalékos;adottság;adogatás;ágy
 kanálgép;oroszlán;ábrázoló;adakozás;aggasztó;akasztós;alaposan;álcázott
 analfabéta;ablaküveg;acéllemez;adományoz;adószedés;agresszív;ajándékoz;akadályok;akasztófa
 ábrázolás;adatfájlok;adottságok;alapelemek;alapítvány;alátámaszt;alkalmazás;állatorvos
-programozás
+programozás;ablaknyílás;adatgyűjtés;adatelemzés;adományozás;ágymelegítő;akadályozás;alázatosság;alkotmányos
 csak minta
