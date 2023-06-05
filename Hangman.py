@@ -29,6 +29,21 @@ corpses.append(Corpses(3))
 corpses.append(Corpses(4))
 corpses.append(Corpses(5))
 corpses.append(Corpses(6))
+corpses.append(Corpses(7))
+corpses.append(Corpses(8))
+corpses.append(Corpses(9))
+corpses.append(Corpses(10))
+corpses.append(Corpses(11))
+corpses.append(Corpses(12))
+corpses.append(Corpses(13))
+corpses.append(Corpses(14))
+corpses.append(Corpses(15))
+corpses.append(Corpses(16))
+corpses.append(Corpses(17))
+corpses.append(Corpses(18))
+corpses.append(Corpses(19))
+corpses.append(Corpses(20))
+
        
 #functions
 def spaceindex(szo):
@@ -45,12 +60,12 @@ def vonalak(betűszám: int, spaceind: list, screen):
     s = 600 / betűszám
     vonal_surf = pygame.Surface((w, 3))
     for x in range(betűszám):
-        vonal_rect = vonal_surf.get_rect(midleft = (600 + x * s , 150))
+        vonal_rect = vonal_surf.get_rect(midleft = (600 + x * s , 250))
         if x not in spaceind:
             screen.blit(vonal_surf, vonal_rect)
             
 def gombok_kiiras(oszt_betulist: list[Gombok], screen):
-    h = 300
+    h = 350
     w = 600
     ar = 500 / (len(oszt_betulist) / 2)
     for g in oszt_betulist:
@@ -65,7 +80,7 @@ def gombok_kiiras(oszt_betulist: list[Gombok], screen):
         screen.blit(g.surf, g.rect)
         w += ar
         if w > 1150:
-            h = 400
+            h = 450
             w = 600
 
             
@@ -79,15 +94,25 @@ def guess(szo: str, gomb, kirajzolaslista: list, szint, hiba, screen):
                 w = 500 / len(szo)
                 s = 600 / len(szo)
                 betu_surf = my_font.render(gomb.betu, False, (255,255,255))
+                if len(szo) < 11:
+                    betu_surf = pygame.transform.scale(betu_surf, (30 + (110 - len(szo) * 10),30 + (100 - len(szo) * 10)))
                 for x in range(len(szo)):
-                    betu_rect = betu_surf.get_rect(midleft=(600 + x * s, 130))
+                    betu_rect = betu_surf.get_rect(bottomleft=(600 + x * s, 249))
                     if i == x:
                         screen.blit(betu_surf, betu_rect)
     else:
         gomb.value = 0
-        if hiba < 9:
+        if  hiba == 0:
             kirajz_surface = kirajzolaslista[szint - 1].kirajz[hiba]
-            kirajz_rect = kirajz_surface.get_rect(midtop=(200,200))
+            kirajz_rect = kirajz_surface.get_rect(bottomleft = (20, 600))
+            screen.blit(kirajz_surface, kirajz_rect)
+        elif  hiba == 1:
+            kirajz_surface = kirajzolaslista[szint - 1].kirajz[hiba]
+            kirajz_rect = kirajz_surface.get_rect(bottomleft = (20, 180))
+            screen.blit(kirajz_surface, kirajz_rect)
+        elif hiba < 12 and hiba > 1:
+            kirajz_surface = kirajzolaslista[szint - 1].kirajz[hiba]
+            kirajz_rect = kirajz_surface.get_rect(midtop=(250,170))
             screen.blit(kirajz_surface, kirajz_rect)
     
 def hs_mentes(szint):
@@ -109,6 +134,12 @@ def akasztofa(screen,hatter_surface, hatter_rect, szo: str, spaceindex, gombok, 
     level_surf = my_font.render(f'Level {szint}', False, (0,0,0))
     level_surf = pygame.transform.scale(level_surf, (180,70))
     level_rect = level_surf.get_rect(midtop= (600, 0))
+    akaszt_surf = pygame.Surface((40, 430))
+    akaszt_rect = akaszt_surf.get_rect(bottomleft = (20, 600))
+    akasztr_surf = pygame.Surface((300, 40))
+    akasztr_rect = akasztr_surf.get_rect(bottomleft = (20, 180))
+    
+    
     # running
     while True:
         keretesc = 2
@@ -135,13 +166,23 @@ def akasztofa(screen,hatter_surface, hatter_rect, szo: str, spaceindex, gombok, 
                         if g.betu not in szo.upper():
                             hiba += 1
                             g.value = 0
+        if hiba >= 0:
+            screen.blit(akaszt_surf,akaszt_rect)
+        if hiba >= 1:
+            screen.blit(akasztr_surf, akasztr_rect)
+
                 
 
         screen.blit(hatter_surface, hatter_rect)
         screen.blit(level_surf, level_rect)
-        
+        if hiba > 1:
+            pygame.draw.line(screen, 'Black', (40, 300), (120, 150), 20)
         vonalak(len(szo), spaceindex, screen)
         gombok_kiiras(gombok, screen)
+        if hiba >= 0:
+            screen.blit(akaszt_surf,akaszt_rect)
+        if hiba >= 1:
+            screen.blit(akasztr_surf, akasztr_rect)
         for gues in guess_buttons:
             guess(szo, gues, kirajzolaslista, szint, hiba, screen)
             
@@ -168,10 +209,32 @@ def akasztofa(screen,hatter_surface, hatter_rect, szo: str, spaceindex, gombok, 
             comp_surf = my_font.render('Completed',False, (0,0,0) )
             comp_surf = pygame.transform.scale(comp_surf, (300,100))
             comp_rect = comp_surf.get_rect(midbottom= (600, 300))
+            if szint == 20:
+                comp_surf = my_font.render('You have Completed all the lvls',False, (0,0,0) )
+                comp_surf = pygame.transform.scale(comp_surf, (600,100))
+                comp_rect = comp_surf.get_rect(midtop= (600, 150))
+                compl_surf = my_font.render('Congratulations, you are a big G, if you havent cheat',False, (0,0,0) )
+                compl_surf = pygame.transform.scale(compl_surf, (1000,100))
+                compl_rect = compl_surf.get_rect(midtop= (600, 250))
+                comple_surf = my_font.render('Thanks for playing!',False, (0,0,0) )
+                comple_surf = pygame.transform.scale(comple_surf, (300,100))
+                comple_rect = comple_surf.get_rect(midtop= (600, 350))
+                next_surf = my_font.render('I liked it',False, (0,0,0) )
+                next_surf = pygame.transform.scale(next_surf, (180,70))
+                next_rect = next_surf.get_rect(midright= (900, 500))
+                homme_surf = my_font.render('I didnt liked it',False, (0,0,0) )
+                homme_surf = pygame.transform.scale(homme_surf, (180,70))
+                homme_rect = homme_surf.get_rect(midleft= (300, 500))
+            
             screen.blit(win_surface, win_rect)
             screen.blit(homme_surf, homme_rect)
             screen.blit(next_surf, next_rect)
             screen.blit(comp_surf, comp_rect)
+            if szint == 20:
+                screen.blit(compl_surf, compl_rect)
+                screen.blit(comple_surf, comple_rect)
+        
+                
             level_surf = pygame.transform.scale(level_surf, (300,100))
             level_rect = level_surf.get_rect(midtop= (600, 0))
             screen.blit(level_surf, level_rect)
@@ -198,19 +261,23 @@ def akasztofa(screen,hatter_surface, hatter_rect, szo: str, spaceindex, gombok, 
             
         jo = 0
         
-        if hiba == 9:
+        if hiba == 12:
+            word_surf = my_font.render(f'Your word was: {szo}',False, (0,0,0) )
+            word_surf = pygame.transform.scale(word_surf, (400,100))
+            word_rect = word_surf.get_rect(midtop= (600, 400))
             homme_surf = my_font.render('Menu',False, (0,0,0) )
-            homme_surf = pygame.transform.scale(homme_surf, (180,70))
-            homme_rect = homme_surf.get_rect(midtop= (600, 400))
+            homme_surf = pygame.transform.scale(homme_surf, (200,80))
+            homme_rect = homme_surf.get_rect(midtop= (600, 250))
             win_surface = pygame.Surface((1200,600))
             win_surface.fill((220,220,220))
             win_rect = win_surface.get_rect(midtop=(600,0))
             comp_surf = my_font.render('Failed',False, (180,0,0) )
             comp_surf = pygame.transform.scale(comp_surf, (300,100))
-            comp_rect = comp_surf.get_rect(midbottom= (600, 300))
+            comp_rect = comp_surf.get_rect(midbottom= (600, 200))
             screen.blit(win_surface, win_rect)
             screen.blit(homme_surf, homme_rect)
             screen.blit(comp_surf, comp_rect)
+            screen.blit(word_surf, word_rect)
             level_surf = pygame.transform.scale(level_surf, (300,100))
             level_rect = level_surf.get_rect(midtop= (600, 0))
             screen.blit(level_surf, level_rect)

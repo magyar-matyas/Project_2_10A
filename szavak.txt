@@ -1,19 +1,20 @@
-alma;cica;polc;lány;fény;hold;ajtó;álom;baba;bank;bagó;baki;báró;vall;váll;zakó
-ablak;kutya;majom;kifli;labda;malac;alkar;zuhog;zubog;zsuga;zuhan;agrár;tenger;sza,ár;kalap
-kalauz;kaktusz;abrosz;afrika;agancs;akárki;akármi;alájúz;alapos;aljzat;állami;altató
-villamos;ananász;piskóta;ablaktok;akadozás;adalékos;adottság;adogatás;ágyartó;akadémia;alacsony;alánukik;alakítja;alámerül;alapszín;alapvető;albérlet;
-kanálgép;oroszlán;ábrázoló;adakozás;aggasztó;akasztós;alaposan;álcázott
-analfabéta;ablaküveg;acéllemez;adományoz;adószedés;agresszív;ajándékoz;akadályok;akasztófa
-ábrázolás;adatfájlok;adottságok;alapelemek;alapítvány;alátámaszt;alkalmazás;állatorvos
-programozás;ablaknyílás;adatgyűjtés;adatelemzés;adományozás;ágymelegítő;akadályozás;alázatosság;alkotmányos
-acélkalapács;ágyúcsapszeg;alakváltozás;alattomosság;alaklmazható;alkotóelemek;állomásnapló;anyavállalat
-ablaktisztító;akadálymentes;alapozófesték;alkalmazkodás;álandosított;állványcsavar;alumíniumipar;ártalmatlanul
-adagolótölcsér;akadálytalanul;alkalmatlanság;alkotmányosság;állattenyészet;anyagvizsgálat
-adatfeldolgozás;alkalmazhatóság;állattenyésztés;anyakönyvvezető;átcsoportosítás
-alkotmányellenes;bankjegyhamisító;beszámíthatatlan;csatornatisztító;derékszögvonalzó;egészségtelenség;életszükségletek
-csatlakozhatatlan;csúcsteljesítmény;egyensúlyvesztett;ellenállóképesség;elpusztíthatatlan
-agyhártyagyulladás;baktériumtenyészet;biztosítószekrény;elfogadhatatlanság;fájdalomcsillapító
-állítmánykiegészítő;beszámíthatatlanság;cselekvőképtelenség;gépkocsi-kölcsönzés
-alkalmazkodóképesség;cselekvésléptelenség;elpusztíhatatlanság;kábítószer-kereskedő
-állaspont-változtatás;kiegyensúlyozatlanság;lelkiismeret-furdalás;megszentségtelenített
-csak minta
+gól;arc;ágy;cső;vér;gáz;zár;vár;sár;sír;táj;tőr;kés;kép;máj;bor;sör;bőr;cím;bab;cég;céh;égő;elv;eső;ács;fog;fok;fém;gaz;gém;zaj;rák;hal;híd;hős;idő;jég;láz;óra;vas
+alma;cica;polc;lány;fény;hold;ajtó;álom;baba;bank;bagó;baki;báró;vall;váll;zakó;cápa;bors;cumi;daru;duna;ebéd;egér;elem;este;ezer;elit;eset;érme;erdő;erőd;fánk;fóka;gyík;gumi;golf;hajó;ipar;ikra;jegy;jövő;kaja;kása;kürt;láda;logó;lift;tyúk;pénz;pite;pipa;ránc;róka;rizs;sánc;tank;taxi;térd;trón;vita
+ablak;kutya;majom;kifli;labda;vodka;medve;állás;árvíz;anyós;ázsia;bálna;bárka;barom;bögre;beton;csiga;csóró;csata;csont;csíra;démon;dzsem;eladó;ecset;edzés;enzim;érzék;eposz;elnök;faház;kosár
+kalauz;kaktusz;abrosz;afrika;agancs;alapos;aljzat;állami;altató;betyár;bagoly;export;farmer;gabona;gombóc;harcsa;heroin;kokain;légzés;ibolya;irónia;jelzés;jóslás;jogcím;juhász;kenyér;kenőcs;macska;mocsár;nyírfa;nászút;ocelot;orvos;rendőr;öntöde;kalauz;csirke;parafa;pestis;ritmus;uborka;üveges;zuhany
+villamos;ananász;piskóta;asszony;aszfalt;zsellér;rendező;páciens;uzsonna;osztály;oklevél;özönvíz;megafon;másolat;nádtető;nézőtér;izomláz;invázió;léggömb;lapocka;kitartó;habverő;hardver;hálózat;győztes;félhold;denevér;csarnok;zsarnok;cickány;babaház;albérlet
+kanálgép;oroszlán;fagylalt;akasztás;allergia;befektet;cserkész;dromedár;fejleszt;fejlődés;felfogás;gyalogos;garancia;határsáv;hasmenés;hadiüzem;kazamata;kapszula;karamell;katarzis;idegsejt;igazolás;lambéria;lajstrom;mandarin;másnapos;narrátor;obeliszk;operatőr;oposszum;utalvány;vadkacsa;rajzfilm;párhuzam
+alligátor;állatkert;atombomba;babakocsi;baktérium;barométer;benzinkút;cigaretta;cintányér;ceremónia;cselgáncs;csípőfogó;csokoládé;derékszög;dobhártya;dobókocka;egyenlítő;egyesület;engedmény;építészet;fakopáncs;fejedelem;festészet;filozófus;folyóirat;földszint;galagonya;gimnázium;gumicukor;gyulladás;hagyomány;hálószoba;hányinger;hintaszék;horgászat;illatszer;influenza;jégkorong;játszótér;jelmezbál;kapcsolat;karabiner;karamella;karácsony;kereskedő;korcsolya;különbség;lakodalom;legénység;légnyomás;madártoll;mellbimbó;menetrend;mentőautó;műalkotás;napnyugta;nefelejcs;nemzetség;nyakkendő;nyeremény;óramutató;orángután;ördögűzés;padlizsán;pénztárca;pedagógus;ragtapasz;rendőrség;repülőgép;sétapálca;söralátét;súlyemelő;szabadság;szájkosár;szerencse;szerkezet;sziklafal;szülőföld;tanfolyam;teherautó;tekepálya;település;tolltartó;újságírás;univerzum;üdítőital;vaddisznó;virágláda
+ábrázolás;alkalmazás;ablaktörlő;állatorvos;atomfizika;bérgyilkos;biztosítás;cseresznye;csillagkép;életművész;evezőlapát;forradalom;gravitáció;gyümölcslé;hajszárító;hangszalag;herezacskó;kábítószer;kecskebéka;kedvezmény;kerékpáros;könnycsepp;lombkorona;lovaskocsi;macskaszem;magasugrás;mérőszalag;napkitörés;önéletrajz;paradicsom;rendőrautó;sétálóutca;söröskorsó;súlyemelés;szájpadlás;szaporodás;szellentés;szőlőcukor;takarítónő;teknősbéka;tűzveszély;vágódeszka;végállomás;viharfelhő;zeneszerző
+programozás;adatgyűjtés;adatelemzés;agyrázkódás;bárányfelhő;barlanglakó;biciklitúra;csapatmunka;diadalmenet;ételmaradék;farkasember;fejhallgató;fényképezés;foglalkozás;fogpiszkáló;fürdőnadrág;gondolatjel;gyerekszoba;gyertyafény;gyógynövény;gyomorfájás;hadirokkant;halászbárka;harangvirág;hullámvasút;játékvezető;jogosítvány;kartonpapír;könyvajánló;krumplipüré;légitámadás;lámpaoszlop;lábszárvédő;magánhangzó;mosdókagyló;mosogatógép;olvadáspont;öregasszony;padlásszoba;parkolóhely;patkányfogó;ruhacsipesz;sárgabarack;szívdobogás;tehénlepény;teniszpálya;törpeharcsa;varázspálca
+ablakpárkány;balszerencse;baromfiudvar;biliárdgolyó;bizonyítvány;bokszkesztyű;bundáskenyér;csillagszóró;dinoszaurusz;fáklyásmenet;fehérvérsejt;felkiáltójel;függetlenség;göncölszekér;gyertyatartó;gyógyszerész;hullócsillag;idegenvezető;konzervnyitó;korallzátony;kölcsönhatás;macskaeledel;mesterlövész;osztályterem;pálinkásüveg;rablótámadás;selyemhernyó;szakácskönyv;szarvasbogár;tengerimalac;városközpont;vöröskereszt
+ablaktisztító;alkoholszonda;állatkísérlet;bútorszállító;csipkerózsika;életszínvonal;embervadászat;földigiliszta;gyümölcstorta;hajnalcsillag;intelligencia;kontaktlencse;majomkenyérfa;mellébeszélés;motorkerékpár;nagytakarítás;orvostudomány;ruhásszekrény;szempillantás;szerencseszám;szoknyavadász;támadójátékos;tüdőgyulladás;zongoraművész;zuhanórepülés
+adminisztráció;akasztófakötél;bevásárlókosár;csapatkapitány;dokumentumfilm;érzéstelenítés;fájdalommentes;figyelmeztetés;gondolatolvasó;gyümölcsszedés;hajókirándulás;idegenforgalom;kirakatrendező;konyhaművészet;mostohatestvér;páncélszekrény;petróleumlámpa;szerencsejáték;természetjárás;vadgesztenyefa;villanyborotva;zongoraverseny
+adatfeldolgozás;adatbáziskezelő;ajándékutalvány;boszorkányseprű;csecsemőgondozó;csillagvizsgáló;cukrászsütemény;elfogatóparancs;emésztőrendszer;gyümölcsjoghurt;holdfogyatkozás;keresztrejtvény;véralkoholszint;villamosmegálló;vígjátékszínész
+alkotmányellenes;bevásárlóközpont;boszorkánykonyha;doppingvizsgálat;gyalogátkelőhely;gyümölcskocsonya;mandulagyulladás;sajtótájékoztató;számítástechnika;szerencsétlenség;teknősbékapáncél
+államkapitalizmus;cserekereskedelem;csúcsteljesítmény;élelmiszerellátás;fürdőszobaszőnyeg;görkorcsolyapálya;gyógyszerszekrény;idegösszeroppanás;kényszerleszállás;szelídgesztenyefa;szövegszerkesztés;természettudomány;fluxuskondenzátor
+agyhártyagyulladás;belügyminisztérium;egzisztencializmus;fájdalomcsillapító;fürdőszobaszekrény;fizetésképtelenség;intelligenciateszt;lehallgatókészülék;petrezselyemgyökér;rabszolgakereskedő;szállodatulajdonos;szennyvíztisztítás;takarítószemélyzet;telefonbeszélgetés
+boszorkánymesterség;igazságszolgáltatás;kiegyensúlyozottság;pénzügyminisztérium;szellőztetőkészülék;születésszabályozás
+elpusztíhatatlanság;mátrix transzponálás;alkalmazkodóképesség;dokumentumgyűjtemény;társadalombiztosítás;valószínüségszámítás
+elektrolumineszcencia;endoplazmatikus retikulum;Differenciáltopológia;konvergenciatartomány;programozómatematikus;sürénypetrezselyemgomba;afrikai kafferszarvasvarjú;differenciálhányados
+izoperimetrikus egyenlőtlenség;abdominale tubae uterinae;articulationes temporomandibulares;canales pterygoideae;adrenerg receptor blokkolók
