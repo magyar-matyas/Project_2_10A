@@ -38,7 +38,7 @@ def main() -> None:
     corpses.append(Corpses(4))
     corpses.append(Corpses(5))
     corpses.append(Corpses(6))
-#asd
+#asda
 
     #highscore beolvasás:
     with open('highscore.txt', 'r', encoding='utf-8') as file:
