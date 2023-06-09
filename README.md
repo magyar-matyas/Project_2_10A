@@ -7,7 +7,7 @@
 ##### kirajzolásokhoz, számolásokhoz külön függvények
 ##### külön osztály: gomboknak, szavaknak, karaktereknek ---> skálázhatóság
 ### Menü
-### Csapattagok
-#### Anda Kristóf
-#### Magyar Mátyás
-#### Kulacs Kristóf
+## Csapattagok
+### Anda Kristóf
+### Magyar Mátyás
+### Kulacs Kristóf
