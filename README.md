@@ -1,5 +1,6 @@
 # Project_2_10A
 ## Akasztófa
+### 20 szint
 ### szintenként nehezedő random szavak
 ### szintenként egyre különlegesebb karakterek
 ### Tiszta kód
